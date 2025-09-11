@@ -2,7 +2,6 @@ import { View, Text, StyleSheet, Dimensions, TouchableOpacity, TextInput, Image 
 import Checkbox from 'expo-checkbox';
 import { useState } from "react";   
 import PasswordInput from "../components/input";
-import { LinearTextGradient } from "react-native-text-gradient";
 
 const windowWidth = Dimensions.get('window').width;
 
@@ -14,8 +13,6 @@ export default function LoginScreen({ navigation }) {
         <View style={styles.container}>
 
             <Image style={{ height: 150, width: 150 }} source={require('../assets/Soema.jpg')}/>
-            
-            <LinearTextGradient style={{ fontWeight: "bold", fontSize: 72 }} locations={[0, 1]} colors={["#7500AC", "#FF2222"]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }}> Soema </LinearTextGradient>;
 
             <Text style={styles.text}> E-mail </Text>
 
