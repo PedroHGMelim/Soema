@@ -30,11 +30,11 @@ export default function LoginScreen({ navigation }) {
 
             <View style={{display: "flex", flexDirection: "row", gap: 10}}>
 
-                <TouchableOpacity underlayColor={"#3CB371"} style={{display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "#144DC8", borderRadius: 8, width: 150, height: 60}}>
+                <TouchableOpacity onPress={() => navigation.navigate('Home')} underlayColor={"#3CB371"} style={{display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "#144DC8", borderRadius: 8, width: 150, height: 60}}>
                     <Text style={{color: "#ffffff"}}>Entrar</Text>
                 </TouchableOpacity>
         
-                <TouchableOpacity underlayColor={"#3CB371"} style={{display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "#f3f3f3", borderRadius: 8, width: 150, height: 60}} onPress={() => {navigation.navigate("Home");}}>
+                <TouchableOpacity underlayColor={"#3CB371"} style={{display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "#f3f3f3", borderRadius: 8, width: 150, height: 60}}>
                     <Text>Voltar</Text>
                 </TouchableOpacity>
 
